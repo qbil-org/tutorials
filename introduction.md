@@ -14,7 +14,7 @@
    * [Pushing to Remote](#pushing-to-remote)
    * [Pulling from Remote](#pulling-from-remote)
 4. [Branching in Git](#branching-in-git)
-   * [Creating Branches](#creating-branches)
+   * [Creating Branches](#creating-branch)
    * [Switching Branches](#switching-branches)
    * [Merging Branches](#merging-branches)
 5. [Using GitHub](#using-github)
