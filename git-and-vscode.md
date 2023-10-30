@@ -1,5 +1,6 @@
 # Table of Contents
 1. [Introduction](#introduction)
+   * [Keywords and Definitions](#keywords)
    * [What is Git?](#what-is-git)
    * [What is GitHub?](#what-is-github)
    * [What is Visual Studio Code?](#what-is-visual-studio-code)
@@ -32,6 +33,9 @@
 
 # Introduction
 
+## Keywords
+[Keywords](keywords.md)
+
 **TL;DR** 
 1. Git is a software that can keep track of changes in code. This is very helpful if you want to work on a work on a long projects or work with others.
 2. GitHub is a website that host Git projects.
@@ -51,7 +55,7 @@ A workflow of code writing might be as follows:
 6. A collaborator made some changes to the code.
 7. Some parts of the code didn't work and you have to modify their code to fit your code.
 
-Wouldn't it be nice if there was a way to keep track of which part has been changed, and by whom? This is the purpose of **Git**. Git is a type of software called **version control systems**. The name tells you everything: Git keeps track of different version of the code.
+Wouldn't it be nice if there was a way to keep track of which part has been changed, and by whom? **This is the purpose of "Git". Git is a type of software called "version control systems"**. The name tells you everything: Git keeps track of different version of the code.
 
 Git does this by the following:
 1. There is a central code base that everyone contributes to. 
@@ -98,7 +102,7 @@ This is the default command to run Visual Studio Code. Upon startup, this is wha
 
 ![VSC-1](/images/vsc-open.png)
 
-To check if **git** is installed properly, you can try using the built-in **Terminal**. Navigate to the Menu bar, and select **View** -> **Terminal**. Alternatively, you can use the shortcut **Ctrl+\`** on Windows or **⌘ +\`** on Mac. 
+To check if **git** is installed properly, you can try using the built-in **Terminal**. Navigate to the Menu bar, and select **View** -> **Terminal**. Alternatively, you can use the shortcut **Ctrl+\`**. 
 
 ![VSC-2](/images/vsc-terminal.png)
 ![VSC-3](/images/vsc-terminal-2.png)
@@ -132,6 +136,12 @@ git config --global user.email youremail@email.com
 All the extensions that we use in this tutorial (Git and Github) should be pre-installed with Visual Studio. Still, you should be familiar with extensions, because they are very powerful and can help you with your coding project. 
 
 Navigate to the Extension tab on the left of your Visual Studio Screen. Alternatively, use the shortcuts **Ctrl+Shift+X** on Windows or **⌘+Shift+X** on Mac.
+
+### Recommended extensions:
+* IntelliSense, linting, and debugger tools for C++, Python or whatever your preferred language is. Just search name of language in extensions
+* Jupyter
+* Remote-SSH and Remote-SSH: Editing Configuration Files
+* Docker
 
 # Additional Resources
 Git has a lot of functionalities. If you want to be proficient, consider the following resources:
