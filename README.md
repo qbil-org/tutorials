@@ -22,7 +22,7 @@ List of onboarding materials and resources for incoming lab membors for software
 
 # Introduction
 ## Keywords
-[List of all Keywords][keywords]
+[List of all Keywords and Acryonyms][keywords]
 
 
 # Software Development Lifecycle and Agile

@@ -5,6 +5,8 @@
 
 **Remote Repository**: A repository stored on a remote server that functions as a backup and is shared with all collaborators.
 
+**Registry**: A container image library, essentially a "Repository" for container images where images and different versions of images are stored for later use. Example of registry services provided by a third-party is Docker Hub or GitHub Packages registry, etc. 
+
 **Version Control System**: A piece of software that helps track changes to different version of a repository. This runs locally for each copy of the repository so that changes in a local repository will not be updated in another repository unless sync'ed
 
 **Git**: A ***distributed*** version control system made by Linus Torvalds (guy who created linux). Distributed, in this sense, means that each server/computer has a complete copy/backup
@@ -40,4 +42,12 @@
 **Documentation**: Information about how your code works, colloquially called "docs"
 
 
+# Acronyms:
 
+**pkg**: package w.r.t. software, e.g. python package
+
+**OS**: operating system
+
+**VCS**: version control system
+
+**YAML**: "Yet another markup language" is a language in which many configuration files are written in and is a human-readable.
