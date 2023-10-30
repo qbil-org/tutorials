@@ -32,7 +32,7 @@ This file is to biefly catch you up to speed on containerization technology and 
 [List of all Keywords and Acryonyms](keywords.md)
 
 ## What Even is Docker?
-Docker is a software company whose name become synonymous with the containerization technology they developed/pioneered. This technology is a method of encapsulating the environment in which a software, software subcomponent or a process is meant to run in. Think of it as a wrapper or a... "container", if you will, around the process that includes the dependencies it needs to run so that if it runs in one device it runs on other devices. ***No more compatability issues that arise from different Operating System, package versions, etc.***
+Docker is a software company whose name has become synonymous with the containerization technology they developed/pioneered. This technology is a method of encapsulating the environment in which a software, software subcomponent or a process is meant to run in. Think of it as a wrapper or a... "container", if you will, around the process that includes the dependencies it needs to run so that if it runs in one device it runs on other devices. ***No more compatability issues that arise from different Operating System, package versions, etc.***
 
 ## Why Does it Even Matter?
 Astra and Apollo HPCs in the lab run in a Docker container and is meant to have all your software, packages, custom code for experiements, etc. isolated from other's as the HPCs are a shared resource. To be able to use these HPC's appropriately and effectively, learning the technology it uses is important, because:
