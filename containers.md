@@ -12,7 +12,7 @@
     * [`docker pull`](#docker-pull)
     * [`docker push`](#docker-push)
     * [`docker image`](#docker-image)
-5. [DockerFiles and building Images](#dockerfiles)
+5. [DockerFiles and building Images](#dockerfiles-and-building-images)
     * [`docker build`](#docker-build)
 6. [Managing Containers](#Managing-containers)
     * [`docker start`](#docker-start)

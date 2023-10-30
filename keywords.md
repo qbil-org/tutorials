@@ -15,6 +15,10 @@
 
 **Staging**: a conceptual area where changes can be stored prior to being committed
 
+**Branch**: a branch w.r.t version controls systems is a pointer to a snapshot of changes and can be thought of as a version of a repository. Default branch is `main` or `master`. 
+
+**Fork**: A fork is a copy of a repository that dissociates it from previous committers. It is similar to a branch but it changes the repository's owner and access permissions.
+
 **Text Editor**: a software application that provides an interface to edit text, usually code in this context. Can literally be default notepad, but common editors are Vim, VSCode, Sublime, Atom, notepad++.
 
 **Integrated Development Environment/IDE**: a software software that provides a text editor and additonal development tools, such as a debugger, build automation tools, etc.
@@ -43,11 +47,14 @@
 
 
 # Acronyms:
+**VCS**: Version Control System
 
-**pkg**: package w.r.t. software, e.g. python package
+**pkg**: Package w.r.t. software, e.g. python package
 
-**OS**: operating system
+**OS**: Operating System
 
-**VCS**: version control system
+**YAML**: "Yet Another Markup Language" is a language in which many configuration files are written in and is a human-readable.
 
-**YAML**: "Yet another markup language" is a language in which many configuration files are written in and is a human-readable.
+**w.r.t**: with respect to
+
+**WIP**: Work In Progress
