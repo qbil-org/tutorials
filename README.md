@@ -77,7 +77,7 @@ GitLab CI and Github Actions are integrated with the remote repository service a
 
 
 # Containerization
-
+Containerization describes a technology of encapsulating the environment in which a software, software subcomponent, or a process is meant to run in. Think of it as a wrapper or a... "container". Details are in the [container tutorial](containers.md)
 
 # Documentation
 
