@@ -1,9 +1,11 @@
-# Table of Contents
+# Guide on Version Control Systems/Git and GitHub
+Starting guide to version control systems, namely Git and integrations with a remote repository service like GitHub.
+
+## Table of Contents
 1. [Introduction](#introduction)
    * [Keywords and Definitions](#keywords)
    * [What is Git?](#what-is-git)
    * [What is GitHub?](#what-is-github)
-   * [What is Visual Studio Code?](#what-is-visual-studio-code)
 2. [Setting Up](#setting-up-git)
    * [Installation](#installation)
    * [Setup](#git-setup)
@@ -31,17 +33,18 @@
 7. [Additional Resources](#additional-resources)
 8. [Conclusion](#conclusion)
 
-# Introduction
+## Introduction
 
-## Keywords
-[Keywords](keywords.md)
+### Keywords and Definitions
+[List of all Keywords and Acryonyms](keywords.md)
+
 
 **TL;DR** 
 1. Git is a software that can keep track of changes in code. This is very helpful if you want to work on a work on a long projects or work with others.
 2. GitHub is a website that host Git projects.
 3. Visual Studio Code is a code editor that has Git integrated.
 
-## What is Git?
+### What is Git?
 
 Anybody who writes code knows that it is hard. Over time, code gets messy, and features are added and deleted. It is exponentially more difficult once you work with others people, because now you have to keep track of all changes that other people made.
 
@@ -65,83 +68,34 @@ Git does this by the following:
 
 A code project is called a **repository** by Git (**repo** for short). 
 
-## What is Github?
+### What is Github?
 Git is a software that track changes in your code. Each project is called a repository. **Github** is a company and a website that host repositories (A "hub of Git repo"). You can use Git to directly access repositories on Github. 
 
 Normally, you use Git, the software, by using the command line. Github, the company, released a software called **GitHub Desktop**. This software helps you manage Git repositories using a GUI. 
 
-## What is Visual Studio Code?
-How do you edit your code? When I first started learning to code, I used IDLE, which was the default coding editor that comes with my Python installation. It was easy to use, but did not help me much with writing good and fast code. Visual Studio Code (VSC for short) is a very popular code editor. In a survey on the coding website StackOverflow, VS Code became the overwhelming most popular coding tool -- and for a good reason. It is fast, lightweight, and comes with powerful plugins that are called "extensions". In fact, in some cases, you don't have to leave VS Code to run your code. If you download the neccessary extensions, you can write, debug, and run the code entirely within VS Code.
+## Setting Up
 
-VS Code comes with Git already pre-installed, so you can use Git with VS Code immediately. This guide will tell you the neccessary things you need to know to use Git on VS Code to collaborate with your colleagues and speed up your code development. 
-
-# Setting Up
-
-## Installation
+### Installation
 
 To follow through on this tutorial, you need to have three things:
 1. Git installed on your computer
-2. Visual Studio Code installed on your computer 
+2. Visual Studio Code or other text editor installed on your computer. 
 3. A GitHub account.
 
-You can install Git on your computer as a separate program by following [the installation guide](https://github.com/git-guides/install-git).
+You may already have git installed on your computer and can verify this by running the command `git --version` in your terminal/command prompt. If you do not have it installed, you can install Git on your computer by following [the installation guide](https://github.com/git-guides/install-git). Verify that you have installed it correctly by re-running the command above.
 
-To install Visual Studio Code, go to [the official installation site](https://code.visualstudio.com/download) and follows instruction.
+To install Visual Studio Code, go to [the official installation site](https://code.visualstudio.com/download) and follow the instructions. See [VS Code tutorial](vscode.md)/
 
 To create a GitHub account, go to [GitHub.com](https://github.com/) and sign up for a new account.
 
-## Setup
-
-Visual Studio Code should have Git already installed. To check if your installation is correct, open up Visual Studio Code. I usually open it by opening up Windows PowerShell (you should have it installed if you use Windows) and then type
-
-```
-code
-```
-
-This is the default command to run Visual Studio Code. Upon startup, this is what the program looks like: 
-
-![VSC-1](/images/vsc-open.png)
-
-To check if **git** is installed properly, you can try using the built-in **Terminal**. Navigate to the Menu bar, and select **View** -> **Terminal**. Alternatively, you can use the shortcut **Ctrl+\`**. 
-
-![VSC-2](/images/vsc-terminal.png)
-![VSC-3](/images/vsc-terminal-2.png)
-
-Type into the Terminal 
-
-```
-git
-```
-
-You should get the following responses
-
-```
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
-           <command> [<args>]
-```
-
-The first thing you should do is tell Git who you are. This is because every time you make changes to code, Git will keep track that "Person A make the following changes on this date." You do this by putting your name and your email with the following commands
+Next you should edit your git configuration file to tell Git who you are. This is because every time you make changes to code, Git will keep track that "Person A make the following changes on this date." You do this by putting your name and your email with the following commands
 
 ```
 git config --global user.name "Your Name"
-git config --global user.email youremail@email.com
+git config --global user.email your_no_reply_email@users.noreply.github.com
 ```
 
-## Extensions
-
-All the extensions that we use in this tutorial (Git and Github) should be pre-installed with Visual Studio. Still, you should be familiar with extensions, because they are very powerful and can help you with your coding project. 
-
-Navigate to the Extension tab on the left of your Visual Studio Screen. Alternatively, use the shortcuts **Ctrl+Shift+X** on Windows or **⌘+Shift+X** on Mac.
-
-### Recommended extensions:
-* IntelliSense, linting, and debugger tools for C++, Python or whatever your preferred language is. Just search name of language in extensions
-* Jupyter
-* Remote-SSH and Remote-SSH: Editing Configuration Files
-* Docker
+Where your email should be the no reply email that you received from GitHub. You can view this under the "email" tab on the left side fo the personal settings page on GitHub. See [GitHub commit email setup](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address) for details.
 
 # Additional Resources
 Git has a lot of functionalities. If you want to be proficient, consider the following resources:
