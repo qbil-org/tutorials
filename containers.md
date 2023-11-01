@@ -1,4 +1,7 @@
-# Table of Contents
+# Guide to Docker/Containerization
+Starting guide to using docker and containers with a brief introduction, compilation of useful docker commands, and links to useful reference material. Best way to go through this guide is to read the introduction and go through the docker tutorial (see table of contents) first. You can then reference specific commands and other parts to this guide. There are many more docker commands that you can reference from [Docker's CLI documentation](https://docs.docker.com/engine/reference/commandline/docker/)
+
+## Table of Contents
 1. [Introduction](#introduction)
     * [Keywords and Definitions](#keywords-and-definitions)
     * [What Even is Docker?](#what-even-is-docker)
@@ -26,13 +29,13 @@
 7. [Tutorial](#example-tutorial)
     * [More Resources](#more-resources)
 
-# Introduction
+## Introduction
 This file is to biefly catch you up to speed on containerization technology and Docker. 
 
-## Keywords and Definitions
+### Keywords and Definitions
 [List of all Keywords and Acryonyms](keywords.md)
 
-## What Even is Docker?
+### What Even is Docker?
 Docker is a software company whose name has become synonymous with the containerization technology they developed/pioneered. This technology is a method of encapsulating the environment in which a software, software subcomponent or a process is meant to run in. Think of it as a wrapper or a... "container", if you will, around the process that includes the dependencies it needs to run so that if it runs in one device it runs on other devices. ***No more compatability issues that arise from different Operating System, package versions, etc.***
 
 ## Why Does it Even Matter?
@@ -45,7 +48,7 @@ Astra and Apollo HPCs in the lab run in a Docker container and is meant to have 
 
 ***The first two reasons are important and is substituted with Anaconda in Titan2 and some of the other HPCs but are the most important. Please do not install things directly onto the system as this will affect other users and can conflict with the drivers, libraries, packages, code they use.***
 
-# Running a container
+## Running a container
 ### `docker run`
 
 `docker run <image>:<tag>` is basic docker run command which "spins up" (creates) a new container based on the image you specify `<image:tag>` tells docker to create a new container based of this `<image>`. Tags are different versions of the same image, e.g. `latest` or `1.0.0`; if the tag is not specified, it will docker will look for `<image>:latest`. Options or flags can be also used to customize container settings to your preferences. Below are some of the options that might be useful to you.
@@ -77,7 +80,7 @@ Example:
 See also:
 [Docker reference](https://docs.docker.com/reference/), [NVIDIA containers](https://catalog.ngc.nvidia.com/containers)
 
-# Accessing a Container
+## Accessing a Container
 ### `docker exec`
 This command usually comes in the form `docker exec -it <container_name/id> <command>` and is used to run a command in the container names `<container_name>`, e.g. create a file, start/stop a process, access the terminal via the `-it` option. Container ID can be used in place of container's name
 
@@ -96,7 +99,7 @@ docker exec -d mycontainer touch /test/example.txt
 
 `touch <file_name>` is a linux command to create a new blank file at /test/example.txt
 
-# Managing Docker Images
+## Managing Docker Images
 ### `docker pull`
 
 Command to download image from registry (a type of repository for container images), e.g. [DockerHub](https://hub.docker.com/search?q=). In the formate `docker pull <image>:<tag>`
@@ -115,7 +118,7 @@ Collection of docker commands to manage images, e.g list images stored locally w
 Another common command is `docker image rm <image_name>`, which removes a image named `<image_name>`
 
 
-# DockerFiles and building Images
+## DockerFiles and building Images
 WIP
 
 ### `docker build`
@@ -137,21 +140,21 @@ WIP
 ### `docker ps`
 `docker ps` shows currently running containers in a table format, usually telling you the id, name, and status, e.g. starting up or how long its been up. Use `-a` option to also stopped containers as the default behaviour just shows the running containers.
 
-## Working with Multiple Containers
+### Working with Multiple Containers
 You can encapsulate different subcomponents of an application in separate containers, e.g cache, storage, UI frontend, API, etc., to use containerization technology to your advantage. For example, each subcomponent can be in different programming languages or be running different versions of a package. Containers make share networks and volumes between services as needed and communicate via ports similar to network of computers. 
 
-### Docker Compose
+#### Docker Compose
 Docker feature to manage multi-container applications. Uses a YAML file to define container configuration settings
 
 See [docker compose tutorial](https://docs.docker.com/compose/gettingstarted/) for more information, but this is also somewhat beyond the scope of what is covered here.
 
-### Container Orchestration
+#### Container Orchestration
 There are also container orchestration technologies for automating the deployment, management, and scaling of multiple containers applications, the most popular of which is Google's [Kubernetes](https://kubernetes.io/docs/home/). E.g. spins up more containers of a specific resources (called pods) if needed, swaps them out when pushing an update, etc. This goes beyond what is covered here but more information can be found at the end under "More Resources"
 
-# Example Tutorial
+## Example Tutorial
 Parts 1-6 of a tutorial maintained by Docker is highly recommended to become more familar with using docker: https://docs.docker.com/get-started/
 
-## More Resources
+### More Resources
 
 * https://docs.docker.com/reference/
 * https://docs.docker.com/engine/reference/commandline/cli/

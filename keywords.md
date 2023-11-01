@@ -1,5 +1,11 @@
-# Keywords
-*These are my own definitions, may be biased*
+# List of Keyword Definitions and Abbreivations
+An alphabetical list of my definitions for keywords used throughout these tutorials/guides as well as common abbreviations. You may find this useful outside of this guide as I try to simplify concepts/definitions that are commonly used in computer science lingo. 
+
+## Table of Contents:
+1. [Keywords](#keywords)
+2. [Acronyms](#acronyms)
+
+## Keywords
 
 **Artifact**: by-product of software development, umbrella term for packages, docker containers, etc. that are subcomponents of the eventual product/application. 
 
@@ -43,9 +49,13 @@
 
 **Repository**: A collection of code that is organized together in a meaninful way (e.g for a project, subcomponent, documentation, research paper implementation, etc.).
 
+**Scrum**: "Agile" framework for separating work into time-boxed iterations, called "sprints"
+
+**Shell**: software that interprets and executes commands entered in terminal, also known as a command-line interpreter.
+
 **Staging**: a conceptual area where changes can be stored prior to being committed
 
-**Scrum**: "Agile" framework for separating work into time-boxed iterations, called "sprints"
+**Terminal**: A window with a text interface that allows you to communicate with your computer in a more flexible way than graphical interfaces.
 
 **Text Editor**: a software application that provides an interface to edit text, usually code in this context. Can literally be default notepad, but common editors are Vim, VSCode, Sublime, Atom, notepad++.
 
@@ -55,7 +65,10 @@
 
 
 
-# Acronyms:
+## Acronyms:
+**CLI**: Command Line Interface, software that interfaces with your computer's OS via the command line. You may think of this as a software program that allows you to tie a command to text you can enter and run using your computer's terminal, usually coupled with options and flags for customization/flexibility
+
+**GUI**: Graphical User Interface refers to anything displayed in a window used to interface with a software program/application
 
 **OS**: Operating System
 
