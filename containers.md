@@ -1,12 +1,12 @@
 # Table of Contents
 1. [Introduction](#introduction)
-    * [Keywords and Definitions](#keywords)
+    * [Keywords and Definitions](#keywords-and-definitions)
     * [What Even is Docker?](#what-even-is-docker)
     * [Why Does it Even Matter?](#why-does-it-even-matter)
 2. [Running a Container](#running-a-container)
     * [`docker run`](#docker-run)
         * [`docker run` Options](#docker-run-options)
-3. [Accessing a Container](#accesing-a-container)
+3. [Accessing a Container](#accessing-a-container)
     * [`docker exec`](#docker-exec)
 4. [Managing Docker Images](#managing-docker-images)
     * [`docker pull`](#docker-pull)
@@ -14,15 +14,16 @@
     * [`docker image`](#docker-image)
 5. [DockerFiles and building Images](#dockerfiles-and-building-images)
     * [`docker build`](#docker-build)
-6. [Managing Containers](#Managing-containers)
+6. [Managing Containers](#managing-containers)
     * [`docker start`](#docker-start)
     * [`docker stop`](#docker-stop)
     * [`docker kill`](#docker-kill)
-    * [Working with Multiple Containers](#multiple-containers)
+    * [`docker rm`](#docker-rm)
+    * [`docker ps`](#docker-ps)
+    * [Working with Multiple Containers](#working-with-multiple-containers)
         * [Docker-compose](#docker-compose)
         * [Container Orchestration](#container-orchestration)
-7. [Other Commands](#other-commands)
-8. [Tutorial](#example-tutorial)
+7. [Tutorial](#example-tutorial)
     * [More Resources](#more-resources)
 
 # Introduction
@@ -125,14 +126,13 @@ WIP
 `docker start <container_name/id>` starts one or more stopped containers
 
 ### `docker stop`
-`docker start <container_name/id>` stops one or more active containers safely
-
-### `docker rm`
-`docker rm <container_name/id>` deletes the referenced container and unnamed volumes it is connected. 
+`docker stop <container_name/id>` stops one or more active containers safely
 
 ### `docker kill`
 `docker kill <container_name/id>` kills one or more containers, halts all processes running the container and spins it down. This is usually used when container hangs and unable to use `docker stop` to stop a container safely
 
+### `docker rm`
+`docker rm <container_name/id>` deletes the referenced container and unnamed volumes it is connected. 
 
 ### `docker ps`
 `docker ps` shows currently running containers in a table format, usually telling you the id, name, and status, e.g. starting up or how long its been up. Use `-a` option to also stopped containers as the default behaviour just shows the running containers.
