@@ -32,18 +32,22 @@ How do you edit your code? When I first started learning to code, I used IDLE, w
 ____________________________________
 To install Visual Studio Code, go to [the official installation site](https://code.visualstudio.com/download) and follow the instructions for your operating system.
 
+Click through the installer and use the default settings, except for the menu below where you want to select "Add 'Open with Code' action to Windows Explorer file context menu" and "Add 'Open with Code' action to Windows Explorer directory context menu" as shown below,
+
+![VSC-1](/images/vscode_install.png)
+
+This will allow you an "Open with Code" options when you right click on any files and folder while in File Explorer.
+
 ### Add `code` shell command to PATH
-If you are using a Windows machine, the shell command is already installed when you installed VS Code in the step above and you may skip this step comes with the Windows installation of VS Code. If you are using a linux or mac machine, open VS Code and the command palette by pressing `⌘+Shift+P` on mac or `Ctrl+Shift+P` on linux and search "shell command" (see image below).
+If you are using a Windows machine, the shell command is already installed when you installed VS Code in the step above and you may skip this step comes with the Windows installation of VS Code. If you are using a linux or mac machine, open VS Code to setup this feature. After opening up VS Code, bring up the command palette menu by pressing `⌘+Shift+P` on mac or `Ctrl+Shift+P` on linux and search "shell command" (see image below). After selecting "Shell Command: Install 'code' command in PATH", VS Code will add the `code` shell command to your PATH, allowing you to open up vscode from your terminal using it. 
 
-
-![VSC-1](/images/vscode_shell_cmd.png)
-
+![VSC-2](/images/vscode_shell_cmd.png)
 
 
 ### Verifying your installation
 Navigate to your prefered terminal (you should have Windows Powershell pre-installed for Windows and terminal on macOS), a window with a dark background and text should pop up. Then type `code` into the window. This is the default command to run Visual Studio Code from your terminal and is very convenient to open a directory after navigating to it via your terminal. A new window should pop up which looks like the image below:
 
-![VSC-2](/images/vscode_open.png)
+![VSC-3](/images/vscode_open.png)
 
 
 
@@ -54,18 +58,18 @@ ____________________________________
 
 Navigate to the Menu bar, and select **View** -> **Terminal**. Alternatively, you can use the shortcut **Ctrl+\`**. 
 
-![VSC-3](/images/vscode_terminal.png)
+![VSC-4](/images/vscode_terminal.png)
 
 A panel should open up at the bottom of your VS Code window similar to below:
 
-![VSC-4](/images/vscode_terminal_2.png)
+![VSC-5](/images/vscode_terminal_2.png)
 
 
 ## Installing Extensions
-____________________________________
 Navigate to the Extension tab on the left of your Visual Studio Screen. Alternatively, use the shortcuts **`Ctrl+Shift+X`** on Windows or **`⌘+Shift+X`** on Mac. Install any of the below recommended extensions that you plan on using in your workflow. Download Remote-SSH extensions for the next part of this tutorial.
 
 ### Recommended Extensions
+____________________________________
 * IntelliSense, linting, and debugger tools for C++, Python or whatever your preferred language is. Just search name of language in extensions
 * Jupyter
 * Remote-SSH and Remote-SSH: Editing Configuration Files
@@ -74,11 +78,12 @@ Navigate to the Extension tab on the left of your Visual Studio Screen. Alternat
 
 
 ## Remoting with VS Code and SSH
-____________________________________
 
 
 ### Setup remote-ssh Config
+____________________________________
 
 ### SSH'ing into lab HPCs
+____________________________________
 
 ## Additional Resources

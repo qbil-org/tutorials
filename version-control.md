@@ -3,13 +3,12 @@ Starting guide to version control systems, namely Git and integrations with a re
 
 ## Table of Contents
 1. [Introduction](#introduction)
-   * [Keywords and Definitions](#keywords)
+   * [Keywords and Definitions](#keywords-and-definitions)
    * [What is Git?](#what-is-git)
    * [What is GitHub?](#what-is-github)
-2. [Setting Up](#setting-up-git)
+2. [Setting Up](#setting-up)
    * [Installation](#installation)
-   * [Setup](#git-setup)
-   * [Extensions](#extensions)
+   * [Configuration](#configuration)
 3. [Basic Git Commands](#basic-git-commands)
    * [Initialization](#initialization)
    * [Cloning](#cloning)
@@ -42,10 +41,8 @@ Starting guide to version control systems, namely Git and integrations with a re
 **TL;DR** 
 1. Git is a software that can keep track of changes in code. This is very helpful if you want to work on a work on a long projects or work with others.
 2. GitHub is a website that host Git projects.
-3. Visual Studio Code is a code editor that has Git integrated.
 
 ### What is Git?
-
 Anybody who writes code knows that it is hard. Over time, code gets messy, and features are added and deleted. It is exponentially more difficult once you work with others people, because now you have to keep track of all changes that other people made.
 
 A workflow of code writing might be as follows:
@@ -58,10 +55,10 @@ A workflow of code writing might be as follows:
 6. A collaborator made some changes to the code.
 7. Some parts of the code didn't work and you have to modify their code to fit your code.
 
-Wouldn't it be nice if there was a way to keep track of which part has been changed, and by whom? **This is the purpose of "Git". Git is a type of software called "version control systems"**. The name tells you everything: Git keeps track of different version of the code.
+Wouldn't it be nice if there was a way to keep track of which part has been changed, and by whom? **This is the purpose of "Git". Git is a type of software called "version control systems"**. The name tells you everything: Git keeps track of different version of your code.
 
 Git does this by the following:
-1. There is a central code base that everyone contributes to. 
+1. There is a central code base that everyone contributes to called a remote repository. 
 2. Each individual makes a copy of the code base and edits it on their own.
 3. Inviduals submit the code for review. Approved code make it into the central code base
 4. Git keep a log of all changes made by everyone. This means that one person can continue working on a copy of another person's code by simply asking Git what has changed.
@@ -82,12 +79,26 @@ To follow through on this tutorial, you need to have three things:
 2. Visual Studio Code or other text editor installed on your computer. 
 3. A GitHub account.
 
-You may already have git installed on your computer and can verify this by running the command `git --version` in your terminal/command prompt. If you do not have it installed, you can install Git on your computer by following [the installation guide](https://github.com/git-guides/install-git). Verify that you have installed it correctly by re-running the command above.
+Check if you already have git installed on your computer and by running the command `git --version` in your terminal/command prompt. If you do not have it installed, you can install Git on your computer by following [the installation guide](https://github.com/git-guides/install-git). 
+
+   *  **For Window specific users:** 
+
+         Click through the installer and use the default settings except for when you get to the window below:
+
+         ![git_installer1](images/git_install_default_branch.png)
+
+         Then, select "Override the default branch name for new repositories". This will make sure your default branch is named "main" when initializing git in a new repository. Trust me that it will make your life easier as GitHub and others have moved to the default branch name of "main" instead of "master". 
+
+      \
+      Verify that you have installed it correctly by re-running the command above.
+      ***Note: The installer for [Windows]](https://gitforwindows.org/) comes with git bash, which is a shell that is bash/Unix-like and is strongly recommend as your default shell as command prompt and PowerShell are bad.***
 
 To install Visual Studio Code, go to [the official installation site](https://code.visualstudio.com/download) and follow the instructions. See [VS Code tutorial](vscode.md)/
 
 To create a GitHub account, go to [GitHub.com](https://github.com/) and sign up for a new account.
 
+
+### Configuration
 Next you should edit your git configuration file to tell Git who you are. This is because every time you make changes to code, Git will keep track that "Person A make the following changes on this date." You do this by putting your name and your email with the following commands
 
 ```
@@ -97,7 +108,7 @@ git config --global user.email your_no_reply_email@users.noreply.github.com
 
 Where your email should be the no reply email that you received from GitHub. You can view this under the "email" tab on the left side fo the personal settings page on GitHub. See [GitHub commit email setup](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address) for details.
 
-# Additional Resources
+## Additional Resources
 Git has a lot of functionalities. If you want to be proficient, consider the following resources:
 1. Github offical tutorial: https://docs.github.com/en/get-started/quickstart/hello-world 
 2. Atlassian tutorial: https://www.atlassian.com/git/tutorials/what-is-version-control
