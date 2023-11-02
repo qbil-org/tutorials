@@ -44,6 +44,8 @@ Starting guide to version control systems, namely Git and integrations with a re
 ### What is Git?
 Anybody who writes code knows that it is hard. Over time, code gets messy, and features are added and deleted. It is exponentially more difficult once you work with others people, because now you have to keep track of all changes that other people made.
 
+
+
 A workflow of code writing might be as follows:
 
 1. You have a list of files where you write your code.
