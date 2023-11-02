@@ -10,9 +10,10 @@ This guide is meant to cover all the steps required to setup VS Code and incorpo
     * [Add `code` shell command to PATH](#add-code-shell-command-to-path)
     * [Verifying your installation](#verifying-your-installation)
 3. [Navigating VS Code](#navigating-vs-code)
+    * [Git Integration](#git-integration)
+    * [Opening a Terminal](#opening-a-terminal)
 4. [Installing Extensions](#installing-extensions)
     * [Recommended Extensions](#recommended-extensions)
-    * [Verifying your installation](#verifying-your-installation)
 5. [Remoting with VS Code and SSH](#remoting-with-vs-code-and-ssh)
     * [Setup remote-ssh Config](#setup-remote-ssh-config) 
     * [SSH'ing into lab HPCs](#sshing-into-lab-hpcs)
@@ -54,6 +55,13 @@ Navigate to your prefered terminal (you should have Windows Powershell pre-insta
 
 
 ## Navigating VS Code
+This section covers navigating VS Code briefly and a few useful keyboard shortcuts.
+
+### Git integration
+VS Code comes with git integration pre-installed and you can open it using by clicking the third icon from the top on the left vertical sidebar/menu. It lists changed files into 2 categories, "Changes" and "Staged Changes", you can add or remove these changes to staged changes by clicking the "+" or "-" symbols on the side of each file. You can access more git commands, e.g. `git pull`, `git push`, etc. via the UI in VS Code by click the ellipsis (...) symbol on the menu labeled "SOURCE CONTROL".
+
+
+### Opening a Terminal
 ____________________________________
 
 Navigate to the Menu bar, and select **View** -> **Terminal**. Alternatively, you can use the shortcut **Ctrl+\`**. 
@@ -64,6 +72,7 @@ A panel should open up at the bottom of your VS Code window similar to below:
 
 ![VSC-5](/images/vscode_terminal_2.png)
 
+Now you can operate with terminal as usual, try running a command, e.g. `git pull`
 
 ## Installing Extensions
 Navigate to the Extension tab on the left of your Visual Studio Screen. Alternatively, use the shortcuts **`Ctrl+Shift+X`** on Windows or **`⌘+Shift+X`** on Mac. Install any of the below recommended extensions that you plan on using in your workflow. Download Remote-SSH extensions for the next part of this tutorial.
