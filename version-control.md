@@ -37,13 +37,14 @@ Starting guide to version control systems, namely Git and integrations with a re
 ### Keywords and Definitions
 [List of all Keywords and Acryonyms](keywords.md)
 
-
 **TL;DR** 
 1. Git is a software that can keep track of changes in code. This is very helpful if you want to work on a work on a long projects or work with others.
 2. GitHub is a website that host Git projects.
 
 ### What is Git?
 Anybody who writes code knows that it is hard. Over time, code gets messy, and features are added and deleted. It is exponentially more difficult once you work with others people, because now you have to keep track of all changes that other people made.
+
+
 
 A workflow of code writing might be as follows:
 
