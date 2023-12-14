@@ -108,6 +108,9 @@ git config --global user.email your_no_reply_email@users.noreply.github.com
 
 Where your email should be the no reply email that you received from GitHub. You can view this under the "email" tab on the left side fo the personal settings page on GitHub. See [GitHub commit email setup](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address) for details.
 
+## Basic Git Commands
+https://git-scm.com/docs/git#_git_commands
+
 ## Additional Resources
 Git has a lot of functionalities. If you want to be proficient, consider the following resources:
 1. Github offical tutorial: https://docs.github.com/en/get-started/quickstart/hello-world 
