@@ -15,8 +15,7 @@ List of onboarding materials and resources for incoming lab membors for software
     * [Test](#test)
     * [Merge/Push Update](#mergingpushing-updates)
 6. [Containerization](#containerization)
-7. [Documentation](#documentation)
-8. [Best Practices](#best-practices)
+7. [Documentation and Best Practices](#documentation-and-best-practices)
 
 
 # Introduction
@@ -50,7 +49,7 @@ Do use it if you are:
 * Developing an application, service, or pipeline that you intend others in the lab to use. 
 * Working with multiple collaborators using different machines/configurations/etc. 
 
-Additionally, you may want to keep in mind having just the bare minimum for your application to be useful instead of spending time on building a pipeline you and others do not need.
+Additionally, you want to balance your present need of running experiments and with the future rewards of building a pipeline/automation that improves a workflow OR is something that can be built upon. 
 
 ## IDE/Text Editors
 There are many text editors that you can use and each have their own advantages/disadvantages. Vim, atom, sublime, VScode and notepad++ are some of the popular text editors out there, but use whatever you are accustomed to or is easier for you. **Generally, if you have not had extensive experience with a particular text editor, we recommend VSCode because it is easy to pick up, become proficient, and scales with your growth well via its extensions/add-ons**. See [tutorial](vscode.md) on VS Code
@@ -72,10 +71,10 @@ GitLab CI and Github Actions are integrated with the remote repository service a
 ### Containerization
 Containerization describes a technology of encapsulating the environment in which a software, software subcomponent, or a process is meant to run in. Think of it as a wrapper or a... "container". They are used throughout the CI/CD pipeline, particularly for build, integration, and deployment. Details are in the [container tutorial](containers.md). 
 
-# Documentation
+# Documentation and Best Practices
 **Document as much as reasonably possible for your future self and others**. Use single- and multi-line comments throughout your code. If you want to build a tool or API others may use, think about using something like Sphinx (Python projects) or Doxygen (C++ projects). 
 
-# Best Practices
+## Best Practices
 Some nice documents about different topics and best practices by google:
 https://techdevguide.withgoogle.com/paths/principles/
 
