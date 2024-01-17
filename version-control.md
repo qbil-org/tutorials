@@ -94,6 +94,16 @@ Check if you already have git installed on your computer and by running the comm
       Verify that you have installed it correctly by re-running the command above.
       ***Note: The installer for [Windows]](https://gitforwindows.org/) comes with git bash, which is a shell that is bash/Unix-like and is strongly recommend as your default shell as command prompt and PowerShell are bad.***
 
+      
+      * **Optional Step to have have git-bash work with Anaconda**:
+      Find where the directory where you installed git-bash and edit the "bash.bashrc" file by adding the two lines below at the top of the file (after the comments):
+         ```s
+         . "/<full>/<path>/<to>/<Anaconda3>/etc/profile.d/conda.sh"
+         alias python="winpty python.exe"
+         ```
+
+         Where `<full>/<path>/<to>/<Anaconda3>` is the path where Anaconda3 is installed. 
+
 To install Visual Studio Code, go to [the official installation site](https://code.visualstudio.com/download) and follow the instructions. See [VS Code tutorial](vscode.md)/
 
 To create a GitHub account, go to [GitHub.com](https://github.com/) and sign up for a new account.
