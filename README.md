@@ -11,10 +11,7 @@ List of onboarding materials and resources for incoming lab membors for software
 3. [Integrated Development Environment and Text Editors](#idetext-editors)
 4. [Version Control System](#version-control-system)
 5. [Integration](#integration)
-    * [Build](#build)
-    * [Test](#test)
-    * [Merge/Push Update](#mergingpushing-updates)
-6. [Containerization](#containerization)
+    * [Containerization](#containerization)
 7. [Documentation and Best Practices](#documentation-and-best-practices)
 
 
