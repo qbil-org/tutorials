@@ -17,7 +17,7 @@ Starting guide to version control systems, namely Git and integrations with a re
    * [Pushing to Remote](#pushing-to-remote)
    * [Pulling from Remote](#pulling-from-remote)
 4. [Branching in Git](#branching-in-git)
-   * [Creating Branches](#creating-branch)
+   * [Creating Branches](#creating-branches)
    * [Switching Branches](#switching-branches)
    * [Merging Branches](#merging-branches)
 5. [Using GitHub](#using-github)
@@ -121,15 +121,53 @@ Where your email should be the no reply email that you received from GitHub. You
 
 ## Basic Git Commands
 
+### Initialization 
+[`git init`](https://git-scm.com/docs/git-init)  creates an empty Git repository with a `.git` directory for tracking changes and history of repository, hooks, etc.
+
 ### Cloning
+[`git clone <repository>`](https://git-scm.com/docs/git-clone) creates a copy of a `repository`, which is usually a remote repository hosted on GitHub or GitLab, into a new local directory. This copies all history and branches when coupled with a `git pull` after. Remote repository can be cloned over https, e.g. `https://github.com/<github_username>/<repository_name>`, or SSH, e.g `git@github.com:<github_username>/<repository_name>.git`. 
 
 ### Adding Files
+[`git add`](https://git-scm.com/docs/git-add) allows you to add select files to the staging area. See the image below for the sections/areas of a Git project. The staging area allows you to select which files or changes you want to go into your next commit. In other words, you do not have to commit all your saved files that you have been editing and have more fine-grain control over what you want to update in the repository. 
+
+![git-areas](https://git-scm.com/book/en/v2/images/areas.png)
+
+* Note: you can use `-A` flag, e.g. `git add -A`, to add all new and modified files to the staging area. This is a common case where you want to commit all changes.
+
+Adding files can also be done in some text editors that offer a GUI for version control tools such as git. 
 
 ### Committing Changes
+[`git commit`](https://git-scm.com/docs/git-commit) updates the state of the repository with all the changes recorded in the staging area. This is different than the working directory if you stage only a few new or modified files *OR* if you added files to the staging area and then made some more edits that were saved but not added to the staging area. Each commit will be tagged with a description/message that you can use to detail changes; think of this as a sort of record-keeping/logging. 
+
+* Note: you can use `-m` flag to commit with a message in the same line instead of opening a text editor to write a message each time, e.g. `git commit -m "This is a example of a commit message"`. 
+
+Committing files can also be done in some text editors that offer a GUI for version control tools such as git. 
 
 ### Pushing to Remote
+[`git push`](https://git-scm.com/docs/git-push) updated the remote repository to the state of the local repository. You may have already noticed that even though the state of your local repository has changed after you committed changes, the remote repository has not updated. To push this state change to the remote repostiory you use the `git push`.
 
 ### Pulling from Remote
+[`git pull`](https://git-scm.com/docs/git-pull) updates your local repository to the state of the remote repository. **It is usually a good idea to pull before restarting your work on a project with multiple collaborators.** This is to avoid working on a stale version of the code if your collaborators made edits since the last time you worked on the project. Another option is to use a different branch to isolate your development from changes by others. 
+
+
+## Branching in Git
+
+### Creating Branches
+
+### Switching Branches
+
+### Merging Branches
+
+## Using GitHub
+
+### Creating a Repository
+
+### Forking a Repository
+
+### Pull Requests
+### GitHub Issues
+### GitHub Actions
+
 
 
 Additional Info:
