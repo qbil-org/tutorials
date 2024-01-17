@@ -151,30 +151,55 @@ Committing files can also be done in some text editors that offer a GUI for vers
 
 
 ## Branching in Git
+Think of branches as a divergence in the history of a repository, which is the base/trunk in this analogy. Each branch has different history of changes to get to its current working tree. Switching between branches, updates files in the working tree to match the version in the index or the specified tree.
 
 ### Creating Branches
+[`git branch <branch_name>`](https://git-scm.com/docs/git-branch) allows you to create a new branch with the name `branch_name` 
 
 ### Switching Branches
+[`git checkout <branch_name>`](https://git-scm.com/docs/git-checkout) allows you to switch to another branch with the name `branch_name`
+
+* Note: You can also create a new branch and switch to /checkout the branch in the same command by using the `-b` option with the `git checkout` command: `git checkout -b <new_branch_name>`.
 
 ### Merging Branches
+[`git merge <branch_name>`](https://git-scm.com/docs/git-merge) allows you to merge branch `branch_name` with your current branch. E.g if you want to merge branch `featureA` with `main`, you can perform the following:
+```s
+git checkout main
+git merge featureA
+```
 
+If there are conflicts between the branches, then the merge will be paused and you will have to resolve the conflicts manually. 
+
+Additional Info: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 ## Using GitHub
+GitHub is a service that allows you to host repositories. An alternative is GitLab. It has also branched out to allow for more CI/CD functionality through GitHub Actions, GitHub Packages, etc. 
 
 ### Creating a Repository
+To create a repository, go to "Repositories" under your GitHub account or our organization's GitHub page: https://github.com/qbil-org. Click "New" or "New Repository" and come up with a name for the project and a short description. You can set the visibility of the project and add a few template files if you wish, and, when you are finished, click "Create Repository". 
 
 ### Forking a Repository
+Sometimes you do not want to create a new repository but to edit an existing repository. To do this go to the repository you want to edit and click "Fork" in the top left corner. Forking is similar to branching except for a change in the ownership. E.g.  you branch when you own or have write access to the repository and fork when someone else owns it and you want to create a version you can read/write access.
 
 ### Pull Requests
+"A pull request is a proposal to merge a set of changes from one branch into another. In a pull request, collaborators can review and discuss the proposed set of changes before they integrate the changes into the main codebase. Pull requests display the differences, or diffs, between the content in the source branch and the content in the target branch."
+
+See [About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) for more info as this is somewhat out of the scope of this tutorial
+
 ### GitHub Issues
-### GitHub Actions
-
-
+It is a project management tool that allows users and yourself to track bugs, feature requests, etc. Issues can be assigned to contributors to fix bugs or implement features. Try playing around with it on a repository you created.
 
 Additional Info:
-https://git-scm.com/docs/git#_git_commands
+https://github.com/features/issues
+
+### GitHub Actions
+This is GitHub's product for CI/CD, running automated build and integration tests as well as deployment/publishing of software.
+
+Additional Info:
+https://github.com/features/actions
 
 ## Additional Resources
 Git has a lot of functionalities. If you want to be proficient, consider the following resources:
-1. Github offical tutorial: https://docs.github.com/en/get-started/quickstart/hello-world 
-2. Atlassian tutorial: https://www.atlassian.com/git/tutorials/what-is-version-control
-3. ChatGPT: https://chat.openai.com/
+1. Git commands: https://git-scm.com/docs/git#_git_commands
+2. Github offical tutorial: https://docs.github.com/en/get-started/quickstart/hello-world 
+3. Atlassian tutorial: https://www.atlassian.com/git/tutorials/what-is-version-control
+4. ChatGPT: https://chat.openai.com/
