@@ -24,10 +24,10 @@ This guide is meant to cover all the steps required to setup VS Code and incorpo
 [List of all Keywords and Acryonyms](keywords.md)
 
 ### What is Code?
-It seems like a silly questions, but those who have not had much experience coding might see it as something more fanciful than it actually is. ***Code is text***. It is text that tells the computer what to do, e.g. what operations to perform. If we think of it like this, code editors are just text editors and you can code in Notepad or TextEdit (This is the basic plain text editors that comes native with Windows or macOS). There are many languages that you can "code" in, e.g. Python, C++, and even markup languages such as html, markdown, etc. that essentially definees how to map text to computer instructions.
+It seems like a silly questions, but those who have not had much experience coding might see it as something more fanciful than it actually is. ***Code is text***. It is text that tells the computer what operations to perform. If we think of it like this, code editors are just text editors and you can code in Notepad or TextEdit (These are the basic plain text editors that comes native with Windows or macOS). There are many languages that you can "code" in, e.g. Python, C++, and even markup languages such as html, markdown, etc.
 
 ## What is Visual Studio Code?
-How do you edit your code? When I first started learning to code, I used IDLE, which was the default coding editor that comes with my Python installation. It was easy to use, but did not help me much with writing good and fast code. Visual Studio Code (VSC for short) is a very popular code editor. In a survey on the coding website StackOverflow, VS Code became the overwhelming most popular coding tool -- and for a good reason. It is fast, lightweight, and comes with powerful plugins that are called "extensions". In fact, in some cases, you don't have to leave VS Code to run your code. If you download the neccessary extensions, you can write, debug, and run the code entirely within VS Code.
+How do you edit your code and what tools are available to assist? VS code is a very popular code editor that has a low threshold to entry and is highly customizable with advanced features available through extensions. In fact, in some cases, you don't have to leave VS Code to run or test your code. If you download the neccessary extensions, you can write, debug, and run the code entirely within VS Code.
 
 ## Installing VS Code
 ____________________________________
@@ -51,9 +51,6 @@ Navigate to your prefered terminal (you should have Windows Powershell pre-insta
 ![VSC-3](/images/vscode_open.png)
 
 
-
-
-
 ## Navigating VS Code
 This section covers navigating VS Code briefly and a few useful keyboard shortcuts.
 
@@ -75,7 +72,7 @@ A panel should open up at the bottom of your VS Code window similar to below:
 Now you can operate with terminal as usual, try running a command, e.g. `git pull`
 
 ## Installing Extensions
-Navigate to the Extension tab on the left of your Visual Studio Screen. Alternatively, use the shortcuts **`Ctrl+Shift+X`** on Windows or **`⌘+Shift+X`** on Mac. Install any of the below recommended extensions that you plan on using in your workflow. Download Remote-SSH extensions for the next part of this tutorial.
+Navigate to the Extension tab on the left of your Visual Studio Screen. Alternatively, use the shortcuts **`Ctrl+Shift+X`** on Windows or **`⌘+Shift+X`** on Mac. Install any of the below recommended extensions that you plan on using in your workflow. **Download Remote-SSH extensions for the next part of this tutorial.**
 
 ### Recommended Extensions
 ____________________________________
@@ -87,12 +84,32 @@ ____________________________________
 
 
 ## Remoting with VS Code and SSH
-
+You can set up VS code to connect to HPCs in our lab or other computers on the local network (You have to be connected via CometNet or VPN).
 
 ### Setup remote-ssh Config
 ____________________________________
+Press `Ctrl+Shift+P`, or `⌘+Shift+P` on mac, and search `Remote-SSH: Open SSH Configuration File...` and open the file `C:\Users\<your_username>\.ssh\config` from the dropdown menu as below: 
+
+![VSC-6](/images/vscode_remote-ssh_config.png)
+
+You can then setup configurations in VS Code so that it remembers the host pc (a lab HPC in our case) and you can easily ssh from your computer into the same HPC in the future.
+
+```s
+Host <displayed_name/alias>
+  HostName <ip address of the HPC the form x.x.x.x>
+  User <username on HPC>
+```
+Where `displayed_name/alias` is any name that you want the HPC or host PC to be called to help you remember the PC. If you are familiar with OpenSSH and ssh'ing via a terminal HostName and User would be `ssh User@HostName`. 
 
 ### SSH'ing into lab HPCs
 ____________________________________
+Now that setup is complete, you can easily SSH to the HPC by bringing up the command palette (`Ctrl+Shift+P` or `⌘+Shift+P` on mac) and type/select `Remote-SSH: Connect to Host`
+
+![VSC-7](/images/vscode_remote.png)
+
+Then select the HPC under the alias you set during the setup step above.
 
 ## Additional Resources
+* [VSC Shortcuts for Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+* [VSC Shortcuts for Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+* [VSC documentation](https://code.visualstudio.com/docs)
