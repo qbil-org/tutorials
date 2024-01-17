@@ -12,7 +12,7 @@ List of onboarding materials and resources for incoming lab membors for software
 4. [Version Control System](#version-control-system)
 5. [Integration](#integration)
     * [Containerization](#containerization)
-7. [Documentation and Best Practices](#documentation-and-best-practices)
+6. [Documentation and Best Practices](#documentation-and-best-practices)
 
 
 # Introduction
