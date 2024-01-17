@@ -69,7 +69,9 @@ A panel should open up at the bottom of your VS Code window similar to below:
 
 ![VSC-5](/images/vscode_terminal_2.png)
 
-Now you can operate with terminal as usual, try running a command, e.g. `git pull`
+Now you can operate with terminal as usual, try running a command, e.g. `git pull`. The default shell for VSCode is PowerShell for Windows and zsh for mac, if you want to change this, you can bring up the command palette (`Ctrl+Shift+P` or `⌘+Shift+P` on mac) and search `Terminal:Configure Terminal Settings`. The setting is under `Terminal>Integrate>Default Profile`.
+
+![VSC-6](/images\vscode_terminal_settings.png)
 
 ## Installing Extensions
 Navigate to the Extension tab on the left of your Visual Studio Screen. Alternatively, use the shortcuts **`Ctrl+Shift+X`** on Windows or **`⌘+Shift+X`** on Mac. Install any of the below recommended extensions that you plan on using in your workflow. **Download Remote-SSH extensions for the next part of this tutorial.**
@@ -90,7 +92,7 @@ You can set up VS code to connect to HPCs in our lab or other computers on the l
 ____________________________________
 Press `Ctrl+Shift+P`, or `⌘+Shift+P` on mac, and search `Remote-SSH: Open SSH Configuration File...` and open the file `C:\Users\<your_username>\.ssh\config` from the dropdown menu as below: 
 
-![VSC-6](/images/vscode_remote-ssh_config.png)
+![VSC-7](/images/vscode_remote-ssh_config.png)
 
 You can then setup configurations in VS Code so that it remembers the host pc (a lab HPC in our case) and you can easily ssh from your computer into the same HPC in the future.
 
@@ -105,7 +107,7 @@ Where `displayed_name/alias` is any name that you want the HPC or host PC to be 
 ____________________________________
 Now that setup is complete, you can easily SSH to the HPC by bringing up the command palette (`Ctrl+Shift+P` or `⌘+Shift+P` on mac) and type/select `Remote-SSH: Connect to Host`
 
-![VSC-7](/images/vscode_remote.png)
+![VSC-8](/images/vscode_remote.png)
 
 Then select the HPC under the alias you set during the setup step above.
 
