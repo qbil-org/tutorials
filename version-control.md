@@ -26,11 +26,8 @@ Starting guide to version control systems, namely Git and integrations with a re
    * [Pull Requests](#pull-requests)
    * [GitHub Issues](#github-issues)
    * [GitHub Actions](#github-actions)
-6. [Best Practices](#best-practices)
-   * [Commit Messages](#commit-messages)
-   * [Collaborative Workflow](#collaborative-workflow)
-7. [Additional Resources](#additional-resources)
-8. [Conclusion](#conclusion)
+6. [Additional Resources](#additional-resources)
+7. [Conclusion](#conclusion)
 
 ## Introduction
 
