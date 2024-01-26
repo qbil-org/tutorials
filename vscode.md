@@ -71,7 +71,7 @@ A panel should open up at the bottom of your VS Code window similar to below:
 
 Now you can operate with terminal as usual, try running a command, e.g. `git pull`. The default shell for VSCode is PowerShell for Windows and zsh for mac, if you want to change this, you can bring up the command palette (`Ctrl+Shift+P` or `⌘+Shift+P` on mac) and search `Terminal:Configure Terminal Settings`. The setting is under `Terminal>Integrate>Default Profile`.
 
-![VSC-6](/images\vscode_terminal_settings.png)
+![VSC-6](/images/vscode_terminal_settings.png)
 
 ## Installing Extensions
 Navigate to the Extension tab on the left of your Visual Studio Screen. Alternatively, use the shortcuts **`Ctrl+Shift+X`** on Windows or **`⌘+Shift+X`** on Mac. Install any of the below recommended extensions that you plan on using in your workflow. **Download Remote-SSH extensions for the next part of this tutorial.**
